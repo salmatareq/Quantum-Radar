@@ -25,24 +25,31 @@ How It Works
 
 
 ```text
-Quantum-Radar
-├── src
-│   ├── constants
-│   │   ├── FineFees.java
-│   │   └── SpeedLimits.java
-│   ├── exceptions
+Quantum-Radar/
+├── src/
+│   ├── constants/
+│   │   ├── ErrorMessages.java
+│   │   ├── FeesOfViolation.java
+│   │   └── MaxSpeed.java
+│   │
+│   ├── exceptions/
 │   │   └── InvalidDataException.java
-│   ├── model
+│   │
+│   ├── model/
 │   │   ├── CarType.java
 │   │   ├── Fine.java
 │   │   ├── Observation.java
 │   │   └── Violation.java
-│   ├── radar
+│   │
+│   ├── radar/
 │   │   └── Radar.java
-│   ├── rules
-│   │   ├── Rule.java
+│   │
+│   ├── rules/
+│   │   ├── Rules.java
 │   │   ├── SeatbeltRule.java
 │   │   └── SpeedLimitRule.java
+│   │
 │   └── Main.java
+│
 └── README.md
 ```
