@@ -1,9 +1,7 @@
 package model;
 
-import utils.CarType;
-import utils.ErrorMessages;
-import exeptions.InvalidPlateException;
-import exeptions.InvalidSpeedException;
+import constants.ErrorMessages;
+import exceptions.InvalidDataException;
 
 import java.time.LocalDate;
 
@@ -16,11 +14,11 @@ public class Observation {
     Boolean seatbeltFastened;
 
     public Observation(String plateNumber, LocalDate date, CarType carType, int speed, boolean seatbeltFastened)
-            throws InvalidPlateException, InvalidSpeedException {
+            throws InvalidDataException {
         if (plateNumber == null || plateNumber.isEmpty())
-            throw new InvalidPlateException(ErrorMessages.INVALID_PLATE);
+            throw new InvalidDataException(ErrorMessages.INVALID_PLATE);
         if (speed < 0)
-            throw new InvalidSpeedException(ErrorMessages.INVALID_SPEED);
+            throw new InvalidDataException(ErrorMessages.INVALID_SPEED);
         this.plateNumber = plateNumber;
         this.date = date;
         this.carType = carType;

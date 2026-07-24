@@ -2,9 +2,9 @@ package rules;
 
 import model.Observation;
 import model.Violation;
-import utils.CarType;
-import utils.FeesOfViolation;
-import utils.MaxSpeed;
+import model.CarType;
+import constants.FeesOfViolation;
+import constants.MaxSpeed;
 
 public class SpeedLimitRule implements Rules {
     CarType carType;

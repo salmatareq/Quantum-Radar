@@ -44,10 +44,7 @@ public class Radar {
         for (Fine fine : fines) {
 
             System.out.println(
-                    fine.getPlateNumber()
-                            + " -> "
-                            + fine.getTotalAmount()
-                            + " EGP");
+                    fine.getPlateNumber() + " : " + fine.getTotalAmount() + " EGP");
         }
     }
 

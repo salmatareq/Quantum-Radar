@@ -31,4 +31,11 @@ public class Violation {
     public BigDecimal getFees() {
         return fees;
     }
+
+    @Override
+    public String toString() {
+        return "ruleName='" + ruleName + '\'' +
+                ", description='" + description + '\'' +
+                ", fees=" + fees ;
+    }
 }

@@ -1,8 +1,9 @@
 import model.Observation;
+import model.Violation;
 import radar.Radar;
 import rules.SeatbeltRule;
 import rules.SpeedLimitRule;
-import utils.CarType;
+import model.CarType;
 
 
 void main() {
@@ -31,6 +32,13 @@ void main() {
 
     System.out.println("Violated  rules Count:");
        radar. getViolatedRulesCount();
+
+        System.out.println("Violations of car ABC1234 : ");
+
+
+        for (Violation v : radar.getViolationsForCar("ABC1234")) {
+            System.out.println(v+"\n");
+        }
 
     } catch (Exception e) {
 

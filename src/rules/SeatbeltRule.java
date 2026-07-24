@@ -2,7 +2,7 @@ package rules;
 
 import model.Observation;
 import model.Violation;
-import utils.FeesOfViolation;
+import constants.FeesOfViolation;
 
 public class SeatbeltRule implements Rules {
     double fees;
